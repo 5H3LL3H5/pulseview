@@ -19,7 +19,7 @@
 ## along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ##
 
-cmake_minimum_required(VERSION 2.8.12)
+cmake_minimum_required(VERSION 2.8.12...3.31.5)
 
 project(pulseview C CXX)
 
@@ -183,7 +183,7 @@ else()
 	set(QT_LIBRARIES Qt6::Gui Qt6::Widgets Qt6::Svg)
 endif()
 
-set(BOOSTCOMPS filesystem serialization system)
+set(BOOSTCOMPS filesystem serialization)
 if(ENABLE_TESTS)
 	list(APPEND BOOSTCOMPS unit_test_framework)
 endif()
